@@ -25,8 +25,8 @@ const x = 123;
 
 const result = x.toString();
 
-console.log(result); //Output 123
-
+console.log(result);
+//Output: 123 typeOf: string
 //Expected output: 123
 ```
 
@@ -37,8 +37,8 @@ const anyArray = [1, 2, 3];
 
 const result = anyArray.toString();
 
-console.log(result); //Output "1,2,3"
-
+console.log(result);
+//Output: "1,2,3" typeOf: string
 //Expected output: "1,2,3"
 ```
 
@@ -49,7 +49,24 @@ const anyArray = [1, 2, 3];
 
 const result = anyArray.toString();
 
-console.log(result); //Output "1,2,3"
+console.log(result);
+//Output: "1,2,3" typeOf: string
+//Expected output: "1,2,3"
+```
+
+##### উধহারণ:- 4
+
+```js
+function toStringFunction(A, B) {
+  const X = A + B;
+
+  const result = X.toString();
+
+  return console.log(result);
+  //Output: "23" typeOf: string
+}
+
+toStringFunction(20, 23);
 
 //Expected output: "1,2,3"
 ```
