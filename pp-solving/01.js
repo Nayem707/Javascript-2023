@@ -63,11 +63,11 @@ const mongdbApi = [
 ];
 
 function myFunction(api) {
-  const result1 = api.filter((f) => f.catagory === 'BAT');
-  const a = result1.map((a) => a.amuont);
+  const result = api.filter((f) => f.catagory === 'BAT');
+  const a = result.map((a) => a.amuont);
 
-  const result2 = a.reduce((a, c) => a + c);
-  console.log(result2);
+  const result1 = a.reduce((a, c) => a + c);
+  console.log(result1);
 }
 
 myFunction(mongdbApi);
