@@ -17,15 +17,14 @@ function displayOutput() {
    *
    *
    *
-   *****************************************************************/
+   **************************CODE HERE*******************************/
 
-  const [name, , vlaueHr] = lines.map(Number);
+  const [name, hra, valueHr] = lines.map(Number);
+  const result = hra * valueHr;
 
-  const result = hr * vlaueHr;
+  console.log(`Name = ${name}\nSALARY = U$${result.toFixed(2)}`);
 
-  console.log(`NUMBER = ${number}\nSALARY = U$ ${result.toFixed(2)}`);
-
-  //*****************************************************************//
+  //*************************CODE HERE*******************************/
   /*
    *
    *
@@ -48,5 +47,6 @@ function displayOutput() {
    *
    *
    * * ************************************************************/
-  document.getElementById('output').innerHTML = 'Output: ' + result.toFixed(2);
+  document.getElementById('output').innerHTML =
+    'Output: ' + `U$ ${result.toFixed(2)}`;
 }
